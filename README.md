@@ -123,7 +123,7 @@ On peut déjà observer notre ID USB que l'on peut noter. Pour moi 0483:df11.
 `auto can0`  
 `iface can0 can static`  
 ` bitrate 250000`  
-` up ifconfig $IFACE txqueuelen 1024`  
+` up ifconfig \$IFACE txqueuelen 1024`  
 `EOF`
 * Ouvrez le fichier et vérifiez le `sudo nano /etc/network/interfaces.d/can0`  
 Il est possible que le `$IFACE` n'ai pas été copié. Ajoutez le si nécessaire et enregistrez avec CTRL+X - Y - ENTER
